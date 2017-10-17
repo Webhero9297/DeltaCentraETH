@@ -6,3 +6,7 @@
     border: 2px solid #fd2d2f!important;
     background: transparent!important;
 }
+
+.row-box.height51 {
+    height: calc(99vh - 81px);
+}
