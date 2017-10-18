@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="/images/centra-logo.png" rel="icon" />
-    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/bootstrap.css" rel="stylesheet" />
     <link href="/css/font-awesome.min.css" rel="stylesheet" />
     <link href="/css/ie10-viewport-bug-workaround.css" rel="stylesheet" />
     <link href="/css/alertify.min.css" rel="stylesheet" />
-    <link href="/css/alertify-bootstrap.min.css" rel="stylesheet" />
     <link href="/css/black.css" rel="stylesheet" id="stylesheet" />
     <link href="/css/small.css" rel="stylesheet" media="only screen and (max-device-width: 480px)" />
     <link href="/css/extCss.css" rel="stylesheet" id="stylesheet" />
+
     <title>Centra ERC20 Token</title>
   </head>
 
@@ -29,17 +29,27 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="/">
-            <img src="/images/centra-title.jpg" />
+            <img class='erc20-logo-icon' src="/images/ERC20_btn.png" />
           </a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<<<<<<< HEAD
           <ul class="nav navbar-nav" style="display: none;">
             <li><a href="javascript:;" onclick="document.getElementById('stylesheet').setAttribute('href', '/css/black.css')"><i class="fa fa-square" aria-hidden="true"></i></a></li>
             <li><a href="javascript:;" onclick="document.getElementById('stylesheet').setAttribute('href', '/css/white.css')"><i class="fa fa-square-o" aria-hidden="true"></i></a></li>
             <li class="dropdown" id="tokensDropdown"></li>
+=======
+<<<<<<< HEAD
+=======
+          <ul class="nav navbar-nav">
+            <li><a class="hidden-tags" href="javascript:;" onclick="document.getElementById('stylesheet').setAttribute('href', '/css/black.css')"><i class="fa fa-square" aria-hidden="true"></i></a></li>
+            <li><a class="hidden-tags" href="javascript:;" onclick="document.getElementById('stylesheet').setAttribute('href', '/css/white.css')"><i class="fa fa-square-o" aria-hidden="true"></i></a></li>
+            <li class="dropdown hidden-tags" id="tokensDropdown"></li>
+>>>>>>> origin/master
           </ul>
+>>>>>>> origin/master
           <ul class="nav navbar-nav navbar-right">
             <li class="chat-button"><a href="javascript:;" class="js-gitter-toggle-chat-button">Chat</a></li>
             <li class="dropdown" id="helpDropdown"></li>
@@ -55,6 +65,10 @@
     <div class="container">
       <div class="row">
         <div class="col-md-2 no-float">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/master
           <div class="row-container">
             <!-- Volume panel start -->
             <div class="row-header trn">volume</div>
@@ -62,6 +76,18 @@
               <div id="volume"></div>
             </div>
             <!-- Volume panel end -->   
+<<<<<<< HEAD
+=======
+=======
+          <div class="sidebar">
+            <div class="row-container c-nav">
+              <!-- Volume panel start -->
+              <div class="row-header trn">volume</div>
+              <div id="volume"></div>
+              <!-- Volume panel end -->   
+            </div>
+>>>>>>> origin/master
+>>>>>>> origin/master
           </div>
         </div>
         <div class="col-md-3 no-float">
@@ -100,7 +126,7 @@
               </div>
             </div>
             <!-- New Order Panel Start -->
-            <div class="row-header trn">new_order</div>
+            <div class="row-header trn new_order">new_order</div>
             <div class="row-box nav-header">
               <ul class="nav nav-tabs two columns" role="tablist">
                 <li role="presentation" class="active"><a href="#buy" aria-controls="buy" role="tab" data-toggle="tab" class="trn btn-side">buy</a></li>
@@ -132,13 +158,13 @@
             </div>
             <div class="row-box height2">
               <div class="tab-content" style="height: 100%;">
-                <div role="tabpanel" class="tab-pane active" id="chartPrice" style="height: 100%; width: 100%; background: #000;"></div>
-                <div role="tabpanel" class="tab-pane" id="chartDepth" style="height: 100%; width: 100%; background: #000;"></div>
+                <div role="tabpanel" class="tab-pane active" id="chartPrice" style="height: 100%; width: 100%;"></div>
+                <div role="tabpanel" class="tab-pane" id="chartDepth" style="height: 100%; width: 100%;"></div>
               </div>
             </div>
             <!-- Price Chart Panel End -->
             <!-- My Transaction History Panel Start -->
-            <div class="row-header trn">my_transactions</div>
+            <div class="row-header trn my_transactions">my_transactions</div>
             <div class="row-box nav-header">
               <ul class="nav nav-tabs three columns" role="tablist">
                 <li role="presentation" class="active"><a href="#myTrades" aria-controls="myTrades" role="tab" data-toggle="tab" class="trn">trades</a></li>
