@@ -10,3 +10,6 @@
 .row-box.height51 {
     height: calc(99vh - 81px);
 }
+.table table-condensed.table-borderless{
+    height: calc(99vh - 81px);
+}
