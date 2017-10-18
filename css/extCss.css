@@ -10,14 +10,3 @@
 .row-box.height51 {
     height: calc(99vh - 81px);
 }
-<<<<<<< HEAD
-.table table-condensed.table-borderless{
-    height: calc(99vh - 81px);
-=======
-.erc20-logo-icon:hover {
-    background:url('../images/ERC20_btn_F.png');
-}
-.hidden-tags {
-    display: none!important;
->>>>>>> origin/master
-}
