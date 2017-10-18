@@ -1,16 +1,3 @@
-@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,700';
-
-html,body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  overflow-x: auto;
-  overflow-y: hidden;
-  font-family: 'Open Sans', sans-serif;
-  background: #ffffff;
-}
-
 .navbar.navbar-default {
   background: #fff;
   border: 0;

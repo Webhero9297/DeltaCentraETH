@@ -35,7 +35,7 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
+          <ul class="nav navbar-nav" style="display: none;">
             <li><a href="javascript:;" onclick="document.getElementById('stylesheet').setAttribute('href', '/css/black.css')"><i class="fa fa-square" aria-hidden="true"></i></a></li>
             <li><a href="javascript:;" onclick="document.getElementById('stylesheet').setAttribute('href', '/css/white.css')"><i class="fa fa-square-o" aria-hidden="true"></i></a></li>
             <li class="dropdown" id="tokensDropdown"></li>
@@ -54,6 +54,16 @@
 
     <div class="container">
       <div class="row">
+        <div class="col-md-2 no-float">
+          <div class="row-container">
+            <!-- Volume panel start -->
+            <div class="row-header trn">volume</div>
+            <div>
+              <div id="volume"></div>
+            </div>
+            <!-- Volume panel end -->   
+          </div>
+        </div>
         <div class="col-md-3 no-float">
           <div class="row-container">
             <div class="row-header trn">balance</div>
@@ -108,14 +118,6 @@
             </div>
             <!-- New Order Panel End -->
             
-          </div>
-        </div>
-        <div class="col-md-2 no-float">
-          <div class="row-container">
-            <!-- Volume panel start -->
-            <div class="row-header trn">volume</div>
-            <div id="volume"></div>
-            <!-- Volume panel end -->   
           </div>
         </div>
         <div class="col-md-4 no-float">

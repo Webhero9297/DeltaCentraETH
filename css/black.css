@@ -1,4 +1,15 @@
-@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,700';
+@font-face {
+    font-family: "opensans";
+    font-style: normal;
+    font-weight: normal;
+    src: url(../fonts/opensans-regular-webfont.woff2) format("woff2");
+}
+@font-face {
+    font-family: "btcglyph";
+    font-style: normal;
+    font-weight: normal;
+    src: url(../fonts/btcglyph.woff2) format("woff2");
+}
 
 html,body {
   margin: 0;
@@ -7,18 +18,18 @@ html,body {
   height: 100%;
   overflow-x: auto;
   overflow-y: hidden;
-  font-family: 'Open Sans', sans-serif;
-  background: #202c34;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#333333+0,202c34+100 */
-  background: rgb(51,51,51); /* Old browsers */
-  background: -moz-linear-gradient(top,  rgba(51,51,51,1) 0%, rgba(32,44,52,1) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  rgba(51,51,51,1) 0%,rgba(32,44,52,1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  rgba(51,51,51,1) 0%,rgba(32,44,52,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#202c34',GradientType=0 ); /* IE6-9 */
+  color: hsla(206,8%,82%,.75);
+  background-image: url(../images/background4.png);
+  font-family: "opensans", sans-serif, "btcglyph";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-
+th {
+  font-family: sans-serif;
+  font-size: 11px;
+}
 .navbar.navbar-default {
-  background: #fff;
+  background: rgba(0,0,0,0);
   border: 0;
   border-radius: 0;
 }
@@ -29,60 +40,81 @@ a.navbar-brand {
 .navbar-brand img {
   height: 100%;
 }
-
+.navbar {
+  margin-bottom: 0px;
+}
+label {
+  font-weight: normal;
+  font-size: 12px;
+  color: hsla(0,0%,100%,.8);
+}
 .container {
   margin: 0;
   padding: 0;
   display:table;
   width: 100%;
   height:100%;
-  margin-top: -20px;
   box-sizing: border-box;
   font-size: 90%;
 }
-
 .center {
   text-align: center;
 }
-
 .row {
   margin: 0;
   padding: 0;
   height: 100%;
   display: table-row;
 }
-
 .row-container {
   width: 100%;
   height: 100%;
 }
-
 .row .no-float {
   margin: 0;
   padding: 0;
   display: table-cell;
   float: none;
+  background-color: rgba(0,0,0,0.6);
 }
 .row .no-float:not(:last-child) {
-  border-right: 1px solid #666;
+  border-right: 2px solid #444;
 }
-
 .row-header {
   width: 100%;
-  background: #444;
+  background-color: rgba(0,0,0,0.1);
   color: #fff;
   text-transform: uppercase;
-  font-size: 16px;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: bold;
   padding: 8px;
   height: 38px;
 }
-
+.row-header.trn.my_transactions,
+.row-header.trn.new_order {
+  border-top: 2px solid #444;
+}
 .row-box {
   height: auto;
-  color: #fff;
+  color: hsla(206,8%,82%,.75);
   overflow-y: none;
 }
-
+.form-control.trn {
+    width: 100%;
+    height: 36px;
+    padding: 8px 5px 8px 10px;
+    border: 1px solid #565f66;
+    border-radius: 2px;
+    outline: 0;
+    box-shadow: none;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    color: #fff;
+    background-color: rgba(64,74,82,0.2);
+}
 .row-box.height1 {
   height: calc(100vh - 89px);
 }
@@ -344,4 +376,13 @@ pre code {
 .ad {
   background: #fff;
   text-align: center;
+}
+.navbar-default .navbar-nav>li>a {
+  color: hsla(206,8%,82%,.75);
+}
+.navbar-default .navbar-nav > li > a:hover {
+  color: white;
+}
+.js-gitter-toggle-chat-button {
+  color: #777;
 }
